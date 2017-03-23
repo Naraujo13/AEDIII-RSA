@@ -1,3 +1,4 @@
+#Nicolas de Araujo - 22/03/17
 #Estrutura contendo ascii criptografado, sera usada para descriptografar
 dictionary = {}
 
@@ -6,7 +7,7 @@ E = 17
 N = 3424467341
 
 
-#Cria dicionario ascii com chave publica fornecida
+#Cria dicionario ascii criptografado com chave publica fornecida
 for i in range (0, 128):
     C =(i**E) % N
     dictionary[C] = i
